@@ -308,7 +308,7 @@ float Jump_Diffusion(struct Daily *lookback_start, float start_price, unsigned o
     float sigma = compute_sigma(lookback_start, mu, option_exp); // sigma is the standard deviation of returns
     float lamda = 0.75;                                          // lamda is the jump intensity constant
     float delta = 0.25;                                          // delta tbh no idea but it was in the model
-    float risk_free = 0.00;                                      // risk free rate
+    float risk_free = 0.001;                                      // risk free rate
     
     // Initialization of Pricing Simulation
     struct Jump_Diff_Node *simulations[NUMBER_OF_SIMULATIONS];

@@ -71,7 +71,7 @@ typedef struct Daily {
  
 typedef struct Historical {
     char *symbol;
-    int lookback_period;
+    unsigned lookback_period;
     struct Daily *start;
     struct Daily   *end;
 } Historical;

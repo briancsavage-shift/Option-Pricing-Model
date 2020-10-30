@@ -138,7 +138,7 @@ int main(int argc, char *argv[]) {
         strcpy(buff, argv[i]);
         initialize_asset(stock, strtok(&buff[0], "."), argv[i]);
         printf("+-----------+ Predicted %s Option Values +----------+\n\n", stock->symbol);
-        predicted_option_values(stock, days_till_expiration(stock->end->date->month, stock->end->date->day, stock->end->date->year););
+        predicted_option_values(stock, days_till_expiration(stock->end->date->month, stock->end->date->day, stock->end->date->year));
         printf("\n+----------------------------------------------------+\n\n\n");
         recycle_asset_allocated_memory(stock);
     }
